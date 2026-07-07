@@ -136,12 +136,12 @@
       gap: 14px; cursor: pointer; transition: border-color 0.2s, background 0.2s;
     }
     .video-upload-block:hover { border-color: var(--blue); background: var(--navy-light); }
-    .video-upload-block video {
+    .video-upload-block video, .video-upload-block iframe {
       position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; display: none; border-radius: var(--radius-lg);
+      object-fit: cover; display: none; border-radius: var(--radius-lg); border: 0;
     }
     .video-upload-block { border-style: solid; cursor: default; }
-    .video-upload-block video { display: block; }
+    .video-upload-block video, .video-upload-block iframe { display: block; }
 
     /* ── Pain section ── */
     .pain-section {
@@ -356,11 +356,11 @@
       display: flex; flex-direction: column; align-items: center; justify-content: center;
       gap: 12px; cursor: pointer;
     }
-    .testimonial-video video {
+    .testimonial-video video, .testimonial-video iframe {
       position: absolute; inset: 0; width: 100%; height: 100%;
-      object-fit: cover; display: none;
+      object-fit: cover; display: none; border: 0;
     }
-    .testimonial-video.has-video video { display: block; }
+    .testimonial-video.has-video video, .testimonial-video.has-video iframe { display: block; }
     .testimonial-video.has-video .upload-ui { display: none; }
     .testimonial-video .upload-icon { width: 48px; height: 48px; font-size: 18px; }
     .testimonial-video .upload-label { font-size: 13px; }
@@ -442,7 +442,7 @@
 <!-- ── Hero Video ── -->
 <div class="hero-video-section">
   <div class="video-upload-block has-video" id="heroVideo">
-    <video controls src="brand_assets/INTRO M2M BREATHWORK.mp4"></video>
+    <iframe src="https://www.youtube-nocookie.com/embed/iNdMFmwG-mw" title="M2M Breathwork - Video de presentación" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     <div class="upload-ui">
       <div class="upload-icon">▶</div>
       <span class="upload-label">Subir video de presentación</span>
@@ -637,7 +637,7 @@
 
     <div class="testimonial-card">
       <div class="testimonial-video has-video" id="t1">
-        <video controls src="brand_assets/Bruno.mov"></video>
+        <iframe src="https://www.youtube-nocookie.com/embed/AHXOfXMJfCU" title="Testimonio de Bruno" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="upload-ui">
           <div class="upload-icon">▶</div>
           <span class="upload-label">Subir testimonio</span>
@@ -652,7 +652,7 @@
 
     <div class="testimonial-card">
       <div class="testimonial-video has-video" id="t2">
-        <video controls src="brand_assets/gabo.mp4"></video>
+        <iframe src="https://www.youtube-nocookie.com/embed/AVrk_fuCJZM" title="Testimonio de Gabriel" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="upload-ui">
           <div class="upload-icon">▶</div>
           <span class="upload-label">Subir testimonio</span>
@@ -667,7 +667,7 @@
 
     <div class="testimonial-card">
       <div class="testimonial-video has-video" id="t3">
-        <video controls src="brand_assets/VIDEO-2025-11-04-09-31-05 (1).mp4"></video>
+        <iframe src="https://www.youtube-nocookie.com/embed/F8fmdrfjnJY" title="Testimonio de Bárbara" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <div class="upload-ui">
           <div class="upload-icon">▶</div>
           <span class="upload-label">Subir testimonio</span>
