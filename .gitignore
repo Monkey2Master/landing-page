@@ -1,0 +1,21 @@
+.DS_Store
+M2M Landing Page
+
+# Large videos pending external (YouTube) hosting — see brand_assets/
+brand_assets/Bruno.mov
+brand_assets/INTRO M2M BREATHWORK.mp4
+brand_assets/gabo.mp4
+brand_assets/VIDEO-2025-11-04-09-31-05 (1).mp4
+
+# Design source file, not needed for the deployed site
+brand_assets/M2M-logo.ai
+
+# Unused local assets (not referenced by index.html)
+brand_assets/Oliver .mov
+brand_assets/monkey2master.com_.png
+brand_assets/jonyrespira.com_*
+brand_assets/m2m-landing-reference-*.png
+
+# Draft/backup copies, not the live page
+index copy.html
+index copy 2.html
