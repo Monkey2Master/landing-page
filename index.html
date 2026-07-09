@@ -168,6 +168,7 @@
       font-size: 11px; font-weight: 800; font-family: 'Barlow Condensed', sans-serif;
     }
     .pain-item p { font-size: 14px; color: var(--light); line-height: 1.6; }
+    .pain-item p strong { color: var(--white); font-weight: 700; }
 
     /* ── Why section ── */
     .why-section { padding: 90px 24px; max-width: 860px; margin: 0 auto; }
@@ -213,6 +214,14 @@
     }
     .about-text h3 .accent { color: var(--blue); display: block; }
     .about-text p { font-size: 15px; color: var(--light); line-height: 1.75; }
+    .about-credential {
+      display: inline-flex; align-items: center; gap: 10px;
+      background: var(--blue-dim); border: 1px solid var(--blue-border);
+      border-radius: 100px; padding: 10px 20px; width: fit-content;
+      font-size: 13px; font-weight: 700; color: var(--blue-bright);
+      letter-spacing: 0.02em;
+    }
+    .about-credential .icon { font-size: 15px; }
     .about-tags { display: flex; flex-wrap: wrap; gap: 8px; }
     .about-tag {
       background: var(--navy-card); border: 1px solid var(--blue-border);
@@ -457,12 +466,12 @@
     <p class="section-label">¿Te identificas?</p>
     <h2 class="section-title">Si sientes que…</h2>
     <div class="pain-grid">
-      <div class="pain-item"><div class="pain-check">✓</div><p>Sabes que puedes más, pero algo te frena y no logras avanzar como quisieras.</p></div>
-      <div class="pain-item"><div class="pain-check">✓</div><p>Tu mente no para y el estrés cotidiano te agota sin que sepas cómo salir.</p></div>
-      <div class="pain-item"><div class="pain-check">✓</div><p>Llevas patrones que se repiten y buscas herramientas reales para romperlos.</p></div>
-      <div class="pain-item"><div class="pain-check">✓</div><p>Tienes claridad sobre lo que quieres, pero te falta el método para lograrlo.</p></div>
-      <div class="pain-item"><div class="pain-check">✓</div><p>Buscas una transformación profunda, no soluciones superficiales.</p></div>
-      <div class="pain-item"><div class="pain-check">✓</div><p>Quieres un guía real, alguien que haya recorrido el camino y pueda acompañarte.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p>Sabes que <strong>puedes más</strong>, pero <strong>algo te frena</strong> y no logras avanzar como quisieras.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p><strong>Tu mente no para</strong> y el <strong>estrés cotidiano te agota</strong> sin que sepas cómo salir.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p>Llevas <strong>patrones que se repiten</strong> y buscas <strong>herramientas reales</strong> para romperlos.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p>Tienes <strong>claridad</strong> sobre lo que quieres, pero te falta el <strong>método</strong> para lograrlo.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p>Buscas una <strong>transformación profunda</strong>, no <strong>soluciones superficiales</strong>.</p></div>
+      <div class="pain-item"><div class="pain-check">✓</div><p>Quieres un <strong>guía real</strong>, alguien que haya <strong>recorrido el camino</strong> y pueda acompañarte.</p></div>
     </div>
   </div>
 </div>
@@ -492,6 +501,7 @@
       <h3><span>Conoce a</span><span class="accent">Max &amp; Alec</span></h3>
       <p>Llevamos más de 10 años explorando, probando y viviendo las herramientas que hoy enseñamos. Desde técnicas de respiración y regulación del sistema nervioso, hasta trabajo de mentalidad y movimiento consciente.</p>
       <p>No somos teóricos. Somos practicantes que pasaron por el mismo proceso que tú estás buscando — y lo convertimos en un método que funciona.</p>
+      <div class="about-credential"><span class="icon">✓</span> Coaches certificados en Breathwork y regulación del sistema nervioso.</div>
       <div class="about-tags">
         <span class="about-tag">Respiración</span>
         <span class="about-tag">Movimiento</span>
@@ -578,14 +588,14 @@
     <div id="servicios" class="offer-card">
       <p class="offer-type">Mini</p>
       <h3 class="offer-title">Método<br>Mini Reset</h3>
-      <p class="offer-desc">Mini curso — 8 técnicas científicamente respaldadas para calmar tu mente, reducir la ansiedad, optimizar tu energía y recuperar el sueño. 100% pregrabado.</p>
+      <p class="offer-desc">Para la mente que no para, el cuerpo que no descansa y la energía que ya no alcanza. 8 técnicas de respiración guiadas — practica cuando y donde lo necesites, y sientes el cambio desde la primera vez.</p>
       <div class="offer-divider"></div>
       <ul class="offer-features">
-        <li>Técnicas aplicables en tiempo real, donde sea que estés</li>
-        <li>Efectos que sientes desde la primera práctica</li>
-        <li>Sin experiencia previa — Completa a tu propio ritmo</li>
-        <li>Optimiza funciones básicas del cuerpo: respiración, sistema nervioso, oxigenación.</li>
-        <li>Guía práctica para usar cada técnica según lo que necesites (calma, energía, sueño).</li>
+        <li>Calma la ansiedad y el estrés en minutos — en tiempo real, sin importar dónde estés</li>
+        <li>Tu cuerpo siente el efecto desde la primera práctica — sin semanas de adaptación</li>
+        <li>3 momentos cubiertos: actívate por la mañana, regula en el día, duerme mejor en la noche</li>
+        <li>Sin experiencia previa — cada técnica guiada paso a paso, a tu propio ritmo</li>
+        <li>Acceso de por vida — úsalo hoy, mañana y cuando más lo necesites</li>
       </ul>
       <div class="offer-price-block">
         <div class="offer-price-row">
@@ -601,14 +611,16 @@
       <span class="offer-badge">Más popular</span>
       <p class="offer-type">Acompañamiento 1 a 1</p>
       <h3 class="offer-title">Método<br>Reset 60</h3>
-      <p class="offer-desc">Acompañamiento 1 a 1 para lograr un cambio fundamental. En 2 meses, tu sistema nervioso aprende a regularse por sí mismo: menos ansiedad, más energía estable y un sueño que por fin descansa. No es una técnica más, es reprogramar tu sistema por completo.</p>
+      <p class="offer-desc">Esto no es gestión del estrés — es un cambio fundamental en la forma en que tu sistema nervioso opera. A través de un proceso 1:1 diseñado desde tu perfil específico, tu cuerpo sale del modo supervivencia y aprende a regularse por sí mismo: menos ansiedad, energía real, sueño que de verdad descansa. El cambio no se queda en la sesión — se instala en ti.</p>
       <div class="offer-divider"></div>
       <ul class="offer-features">
-        <li>Sesiones privadas en vivo</li>
-        <li>Plan de acción personalizado según tu perfil</li>
-        <li>Resultados sostenibles, no solo alivio momentáneo</li>
-        <li>Acceso a recursos y grabaciones exclusivas</li>
-        <li>Soporte disponible 24/7 entre sesiones</li>
+        <li>Sesiones somáticas en vivo — breathwork profundo para liberar lo que el cuerpo lleva acumulado: tensión, emoción, trauma</li>
+        <li>Protocolo construido desde tu perfil — tus niveles de ansiedad, patrones de sueño y respuesta al estrés, nada genérico</li>
+        <li>8 prácticas guiadas en audio para tu día a día — ansiedad en tiempo real, energía matutina, sueño profundo</li>
+        <li>Tu Reset Personal Grabado — una sesión diseñada exclusivamente para ti, tuya de por vida</li>
+        <li>Reporte de evolución personalizado — tu transformación documentada de inicio a cierre</li>
+        <li>Soporte directo 24/7 durante todo el proceso</li>
+        <li>Membresía Fundador M2M — acceso vitalicio a la comunidad y al método</li>
       </ul>
       <div class="offer-price-block">
         <div class="offer-price-row">
@@ -616,6 +628,7 @@
         </div>
         <p class="offer-period">Se determina en la llamada de descubrimiento</p>
       </div>
+      <p class="offer-desc" style="font-size:13px; margin-bottom:16px;">Para entrar, primero hablamos. Agenda tu llamada de descubrimiento — es completamente gratuita. Evaluamos tu perfil y determinamos juntos si este proceso es para ti.</p>
       <a href="https://calendly.com/thebreathworkreset/discovery-breathwork-call-for-corporate-clone" class="btn-primary" target="_blank">Llamada de descubrimiento gratuita →</a>
     </div>
 
@@ -661,7 +674,7 @@
       </div>
       <div class="testimonial-info">
         <span class="testimonial-name">Gabriel</span>
-        <span class="testimonial-result">"La experiencia más transformadora que he tenido en mi vida"</span>
+        <span class="testimonial-result">"Dormí como nunca había dormido en mucho tiempo"</span>
       </div>
     </div>
 
